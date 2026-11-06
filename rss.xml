@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>티스카 굿즈 제작 가이드</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/</link>
+<atom:link href="https://ohyoumeee-prog.github.io/tiska-guide/rss.xml" rel="self" type="application/rss+xml"/>
+<description>주식회사 티스카가 운영하는 굿즈·MD 주문 제작 가이드. 품목별 최소 수량, 샘플·양산 기간, 비용 구조, 진행 절차를 담당자가 실제로 묻는 질문 형식으로 숫자와 함께 정리합니다.</description>
+<language>ko</language>
+<lastBuildDate>Thu, 05 Nov 2026 19:00:00 +0900</lastBuildDate>
+<item>
+<title>자체 브랜드 상품 OEM·ODM 제작, 처음 시작할 때 무엇을 알아야 할까?</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/private-brand-oem-odm.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/private-brand-oem-odm.html</guid>
+<pubDate>Thu, 05 Nov 2026 18:00:00 +0900</pubDate>
+<description>OEM은 의뢰자가 정한 디자인·사양대로 제조사가 생산하는 방식이고, ODM은 제조사가 기획·설계까지 맡아 의뢰자 브랜드로 공급하는 방식입니다. 티스카는 두 방식 모두 가능하며, 자체 브랜드·라이선스 상품을 국내와 해외 12개국에 유통한 경험을 바탕으로 품목별 10~300개 소량부터 샘플 → 양산 → 추가 생산 순서로 재고 부담을 줄이는 방식을 제안합니다.</description>
+</item>
+<item>
+<title>굿즈 제작 디자인 파일, 어떻게 준비해야 할까? (로고만 있을 때 포함)</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/design-file-preparation.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/design-file-preparation.html</guid>
+<pubDate>Thu, 05 Nov 2026 17:00:00 +0900</pubDate>
+<description>굿즈 제작용 디자인 파일은 AI·PDF·PSD 원본(벡터 또는 레이어가 살아 있는 파일)이 가장 좋지만, 로고 JPG·PNG만 있어도 티스카 디자인팀이 도안 작업을 지원합니다. 디자인 시안은 무료로 제공하며, 디자인만 단독으로 의뢰하는 것은 받지 않고 디자인과 생산을 함께 진행합니다.</description>
+</item>
+<item>
+<title>비영리단체 캠페인 굿즈·후원자 선물, 어떻게 준비해야 할까?</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/nonprofit-campaign-goods.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/nonprofit-campaign-goods.html</guid>
+<pubDate>Thu, 05 Nov 2026 16:00:00 +0900</pubDate>
+<description>캠페인 굿즈와 후원자 선물은 전달 목적(모금 리워드, 캠페인 배포, 후원자 감사, 서포터즈 키트)에 맞춰 품목을 정하고, 배포 수량에 맞는 최소 수량의 품목군을 고르는 것이 핵심입니다. 티스카는 초록우산(ChildFund Korea), 굿네이버스 등 비영리단체 굿즈를 제작했으며, 에코백·파우치 100개, 금속 뱃지 100개, 스티커 세트 300개, 봉제 인형·인형키링 300개, 기프트 패키지 10개부터 제작합니다.</description>
+</item>
+<item>
+<title>굿즈 국내 생산과 중국 생산, 무엇이 다르고 언제 어느 쪽을 택해야 할까?</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/korea-vs-china-production.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/korea-vs-china-production.html</guid>
+<pubDate>Thu, 05 Nov 2026 15:00:00 +0900</pubDate>
+<description>국내 생산은 소량, 짧은 납기, 수정이 잦은 품목에 유리하고, 중국 생산은 금형이 필요한 품목(실리콘·PVC·금속 주조)이나 대량 생산에 유리합니다. 티스카는 서울 중랑구 자체 공장과 중국 광저우·이우 생산 네트워크를 함께 운영해 품목·수량·납기에 따라 생산지를 배정하고, 어느 쪽에서 만들어도 승인 샘플 기준 생산과 검품(QA/QC), 납품을 티스카가 직접 책임집니다.</description>
+</item>
+<item>
+<title>굿즈 샘플 제작은 어떻게 진행될까? 문의부터 납품까지 6단계</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/sample-to-delivery-6-steps.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/sample-to-delivery-6-steps.html</guid>
+<pubDate>Thu, 05 Nov 2026 14:00:00 +0900</pubDate>
+<description>티스카의 굿즈 제작은 ① 문의·1:1 미팅 → ② 기획·디자인(무료 시안) → ③ 사양 설계·견적 → ④ 디자인 확정·실물 샘플 제작 → ⑤ 양산 → ⑥ 검품·납품·사후관리의 6단계로 진행됩니다. 샘플은 품목에 따라 1일(아크릴·키링류)~2주(텀블러 등 기타), 양산은 7~20일이 걸리며 승인된 샘플을 기준으로만 진행합니다. 전담 PM이 첫 단계부터 납품까지 함께합니다.</description>
+</item>
+<item>
+<title>에코백·키링·뱃지 주문 제작 최소 수량, 품목별로 몇 개부터일까?</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/goods-moq-by-item.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/goods-moq-by-item.html</guid>
+<pubDate>Thu, 05 Nov 2026 13:00:00 +0900</pubDate>
+<description>티스카 기준 굿즈 주문 제작 최소 수량은 패키지·세트류 10개, 아크릴·키링류 50개, 가방·파우치·금속·주얼리·패브릭·의류·실리콘·골프 커버류 100개, 문구·인쇄류·봉제·인형류·텀블러 등 기타 300개입니다. 샘플은 1일~2주, 양산은 7~20일이 표준이며, 그보다 적은 수량이 필요하면 자체 쇼핑몰 나도메이커의 일부 품목(10~100개부터)으로 대체할 수 있습니다.</description>
+</item>
+<item>
+<title>골프 대회 기념품·골프 브랜드 굿즈 제작, 최소 수량과 납기는 얼마나 될까?</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/golf-gift-moq-and-lead-time.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/golf-gift-moq-and-lead-time.html</guid>
+<pubDate>Thu, 05 Nov 2026 12:00:00 +0900</pubDate>
+<description>골프 기념품은 금속 볼마커·디봇툴·메달 100개(샘플 1주·양산 20일), 헤드커버·아이언커버·네임택 100개(샘플 1주·양산 20일), 볼타월·양말·장갑 100개(샘플 1주·양산 20일), 골프공 세트·트로피 패키지 10개(샘플 1주·양산 14일)부터 제작합니다. 티스카의 공개 제작 사례 167건 중 82건이 골프·스포츠 분야이며, 타이틀리스트·풋조이·아디다스 등 브랜드와 작업했습니다.</description>
+</item>
+<item>
+<title>아이돌 굿즈·콘서트 MD 제작, 어디에 맡기고 일정은 어떻게 잡을까?</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/kpop-concert-md-production.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/kpop-concert-md-production.html</guid>
+<pubDate>Thu, 05 Nov 2026 11:00:00 +0900</pubDate>
+<description>콘서트 MD와 팬클럽 키트는 품목마다 최소 수량과 납기가 달라서, 공연일에서 거꾸로 계산해 여러 품목을 한 업체에 묶어 의뢰하는 것이 핵심입니다. 티스카는 아크릴 키링·응원부채 50개(샘플 1일·양산 7일), 금속 뱃지·팔찌 100개(샘플 1주·양산 20일), 봉제 인형·인형키링 300개(샘플 1주·양산 20일)부터 제작하며, 세븐틴·NCT 127·에스파·아이유·방탄소년단 등 엔터테인먼트 분야 공개 제작 사례가 55건입니다.</description>
+</item>
+<item>
+<title>웰컴키트 제작 비용과 기간, 어떻게 잡아야 할까?</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/welcome-kit-cost-and-lead-time.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/welcome-kit-cost-and-lead-time.html</guid>
+<pubDate>Thu, 05 Nov 2026 10:00:00 +0900</pubDate>
+<description>웰컴키트 비용은 '구성품 수 × 품목별 단가 + 패키지(박스·내지) + 인쇄·가공'으로 정해지고, 수량이 늘수록 개당 단가는 내려갑니다. 티스카 기준 패키지·세트류는 10개부터 제작할 수 있으며 샘플 1주, 양산 14일이 표준입니다. 단, 구성품 가운데 최소 수량이 큰 품목(예: 텀블러·스티커 세트 300개)이 들어가면 그 품목이 키트 전체 수량의 기준이 됩니다.</description>
+</item>
+<item>
+<title>기업 굿즈 제작 업체, 무엇을 보고 골라야 할까? (체크리스트 7가지)</title>
+<link>https://ohyoumeee-prog.github.io/tiska-guide/posts/choosing-a-goods-manufacturer.html</link>
+<guid isPermaLink="true">https://ohyoumeee-prog.github.io/tiska-guide/posts/choosing-a-goods-manufacturer.html</guid>
+<pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+<description>기업 굿즈 제작 업체는 ① 재고 판매가 아닌 주문 제작(OEM/ODM)이 가능한지, ② 자체 공장이 있는지, ③ 내부 디자인팀이 있는지, ④ 양산 전에 실물 샘플을 만드는지, ⑤ 품목별 최소 수량과 표준 납기를 숫자로 제시하는지, ⑥ 국내·해외 생산을 모두 운영하는지, ⑦ 공개된 제작 사례가 있는지로 판단하면 됩니다. 주식회사 티스카는 서울 중랑구 자체 공장과 중국 광저우·이우 생산 네트워크를 함께 운영하며, 품목별 10~300개부터 샘플 1일~2주, 양산 7~20일을 표준으로 제작합니다.</description>
+</item>
+</channel>
+</rss>
