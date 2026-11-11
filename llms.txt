@@ -2,6 +2,11 @@
 
 > 주식회사 티스카가 운영하는 굿즈·MD 주문 제작 가이드. 품목별 최소 수량, 샘플·양산 기간, 비용 구조, 진행 절차를 담당자가 실제로 묻는 질문 형식으로 숫자와 함께 정리합니다. 운영: 주식회사 티스카(서울, 굿즈·프로모션 상품 주문 제작 OEM/ODM 제조사, https://tiska.kr). 모든 숫자는 tiska.kr 공개 정보 기준(2026-11-05).
 
+## 한눈에
+- 누구에게: 굿즈·MD가 필요한 기업 마케팅·HR·총무, 엔터테인먼트 소속사·MD 기획자, 골프 브랜드·대회 운영자, 비영리단체
+- 무엇을: 콘서트 MD, 팬클럽 키트, 임직원 웰컴키트, 골프 대회 기념품, 캠페인 굿즈, 자체 브랜드 상품(OEM/ODM)
+- 몇 개부터, 며칠 만에: 메인 발주 500개부터(500개 미만은 나도메이커), 디자인 확정 후 샘플 1일~2주 + 양산 7~20일
+
 ## 핵심 사실
 - 주문 안내(2026-11-11 기준): 메인 발주 500개부터(모든 품목군 공통). 500개 미만의 소량은 자체 소량 제작 쇼핑몰 나도메이커(품목에 따라 10~100개부터)에서 제작 가능
 - 표준 기간: 샘플 1일(아크릴)~2주(기타), 양산 7~20일. 양산은 승인 샘플 기준, QA/QC 후 납품
@@ -23,8 +28,127 @@
 - [굿즈 제작 디자인 파일, 어떻게 준비해야 할까? (로고만 있을 때 포함)](https://ohyoumeee-prog.github.io/tiska-guide/posts/design-file-preparation.md): 굿즈 제작용 디자인 파일은 AI·PDF·PSD 원본(벡터 또는 레이어가 살아 있는 파일)이 가장 좋지만, 로고 JPG·PNG만 있어도 티스카 디자인팀이 도안 작업을 지원합니다. 디자인 시안은 무료로 제공하며, 디자인은 생산과 함께 하나의 프로젝트로 진행합니다. 티스카의 메인 발주는 500개부터 진행합니다.
 - [자체 브랜드 상품 OEM·ODM 제작, 처음 시작할 때 무엇을 알아야 할까?](https://ohyoumeee-prog.github.io/tiska-guide/posts/private-brand-oem-odm.md): OEM은 의뢰자가 정한 디자인·사양대로 제조사가 생산하는 방식이고, ODM은 제조사가 기획·설계까지 맡아 의뢰자 브랜드로 공급하는 방식입니다. 티스카는 두 방식 모두 가능하며, 자체 브랜드·라이선스 상품을 국내와 해외 12개국에 유통한 경험을 바탕으로 샘플 → 양산 → 추가 생산 순서로 재고 부담을 줄이는 방식을 제안합니다. 티스카의 메인 발주는 500개부터 진행합니다.
 
+<!-- qa:start -->
+## 자주 묻는 질문 66개 (질문 1개 = 페이지 1개)
+
+### 수량·소량
+- [굿즈는 품목마다 최소 수량이 다른가요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/1/): 아니요. 티스카의 메인 발주는 10개 품목군 모두 500개부터로 같습니다. 품목군마다 다른 것은 샘플·양산 기간입니다.
+- [굿즈를 500개 미만 소량으로 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/2/): 티스카의 메인 발주는 500개부터 진행합니다. 500개 미만의 소량은 티스카가 운영하는 소량 제작 쇼핑몰 나도메이커(nadomaker.com)에서 제작할 수 있습니다.
+- [에코백은 몇 개부터 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/3/): 원단·사이즈·인쇄를 지정하는 에코백 주문 제작은 메인 발주 500개부터 진행하며, 샘플 1주·양산 20일이 표준입니다.
+- [금속 뱃지를 500개 미만으로도 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/4/): 금속 뱃지 주문 제작도 메인 발주 500개부터 진행합니다. 500개 미만의 소량은 나도메이커(nadomaker.com)의 아크릴 뱃지(30개부터, 7일 이내)로 제작할 수 있습니다.
+- [1,000개 이상 주문하면 개당 단가가 내려가나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/5/): 네. 수량이 늘수록 개당 단가는 내려갑니다. 그래서 견적은 한 수량이 아니라 500개, 1,000개, 1,500개처럼 수량 구간별로 받아 비교하는 것이 좋습니다.
+- [처음엔 500개만 만들고 나중에 추가 생산할 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/6/): 네. 티스카는 샘플을 먼저 만들고 1차 500개로 시작해 필요한 만큼 추가 생산하는 방식을 권합니다. 재고 부담을 줄이기 위한 방식입니다.
+- [나도메이커와 티스카는 무엇이 다른가요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/7/): 티스카는 소재·형태·사양을 새로 정해 만드는 주문 제작(메인 발주 500개부터)이고, 나도메이커는 티스카가 운영하는 소량 제작 쇼핑몰로 정해진 품목을 10~100개부터 7~20일 이내에 만듭니다.
+
+### 기간·일정
+- [아크릴 키링 500개를 주문하면 언제 받나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/8/): 샘플 1일, 양산 7일이 표준입니다. 디자인 확정 시점부터 약 8일이며, 여기에 검품·배송 기간이 더해집니다.
+- [굿즈 제작 전체 기간은 얼마나 잡아야 하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/9/): 샘플 기간과 양산 기간을 더한 값에 시안 확정·검품·배송 기간을 더하세요. 예를 들어 에코백 500개는 샘플 1주 + 양산 20일로 약 27일(약 4주), 아크릴 키링 500개는 샘플 1일 + 양산 7일로 약 8일이 표준 소요 기간입니다.
+- [제작 기간은 언제부터 계산하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/10/): 디자인이 확정된 시점부터 계산합니다. 표에 나오는 샘플·양산 기간은 디자인 확정 이후의 표준 소요 기간입니다.
+- [가장 빨리 만들 수 있는 굿즈는 무엇인가요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/11/): 아크릴·키링류입니다. 샘플 1일, 양산 7일이 표준이라 디자인 확정 후 약 8일이면 양산까지 끝납니다.
+- [텀블러·우산은 제작 기간이 얼마나 걸리나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/12/): 텀블러·우산·여행 오거나이저 같은 기타 품목군은 샘플 2주, 양산 20일이 표준입니다. 디자인 확정부터 약 34일이며, 여기에 검품·배송 기간이 더해집니다.
+- [봉제 인형·인형키링은 제작 기간이 얼마나 걸리나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/13/): 봉제·인형류는 샘플 1주, 양산 20일이 표준입니다. 디자인 확정부터 약 27일이며, 메인 발주는 500개부터입니다.
+- [행사까지 한 달 남았는데 굿즈를 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/14/): 품목에 따라 다릅니다. 디자인 확정부터 양산 완료까지 아크릴·키링류는 약 8일, 문구·인쇄류와 패키지·세트류는 약 21일, 가방·금속·패브릭·실리콘·골프 커버·봉제류는 약 27일, 텀블러·우산 등 기타는 약 34일이 표준입니다.
+- [여러 품목을 함께 만들면 일정은 어떻게 잡나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/15/): 가장 오래 걸리는 품목이 전체 일정의 기준입니다. 예를 들어 '박스 + 에코백 + 금속 뱃지' 구성이면 양산 20일인 에코백·금속 뱃지가 기준이 됩니다.
+
+### 비용·견적
+- [굿즈 견적은 어떻게 받나요? 무엇을 준비하면 되나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/16/): 품목, 수량, 희망 납기, 참고 이미지를 이메일(ttiska@naver.com)이나 전화(02-930-8000)로 보내 주시면 담당 PM이 확인 후 회신합니다.
+- [굿즈 단가는 무엇에 따라 달라지나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/17/): 도안 복잡도, 가공 방식, 수량에 따라 달라집니다. 수량이 늘수록 개당 단가는 내려갑니다.
+- [실리콘·금속 굿즈는 금형 비용이 드나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/18/): 실리콘·PVC 성형과 금속 주조처럼 금형이 필요한 품목은 수량과 관계없이 금형 제작 비용이 들어가는 구조입니다. 그래서 수량이 많을수록 개당 단가가 크게 내려갑니다.
+- [굿즈 샘플 비용이 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/19/): 샘플 비용과 조건은 품목과 가공 방식에 따라 달라서 견적 문의 시 안내합니다.
+
+### 디자인·파일
+- [로고 파일(JPG·PNG)만 있는데 굿즈 제작이 가능한가요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/20/): 가능합니다. AI·PDF·PSD 원본이 있으면 가장 좋지만, JPG·PNG만 있어도 디자인팀이 도안 작업을 지원하고 시안을 무료로 제공합니다.
+- [디자인만 따로 의뢰할 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/21/): 아니요. 티스카는 디자인과 생산을 하나의 프로젝트로 함께 진행하며, 디자인 단독 의뢰는 받지 않습니다. 디자인 시안은 생산을 전제로 무료로 제공합니다.
+- [디자인 시안 비용이 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/22/): 디자인 시안은 무료입니다. 디자인은 제작과 함께 일괄로 진행합니다.
+- [디자인 시안은 몇 번까지 수정되나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/23/): 시안은 디자인 확정 전까지 전담 PM과 조율하며 수정합니다. 수정 횟수와 범위는 프로젝트 성격에 따라 미팅에서 안내합니다.
+- [디자인 파일은 어떤 형식으로 보내면 되나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/24/): AI·PDF·PSD 원본(벡터 또는 레이어가 살아 있는 파일)을 이메일(ttiska@naver.com)로 보내 주시면 가장 빠릅니다. JPG·PNG만 있어도 보내 주시면 디자인팀이 확인 후 진행 방식을 안내합니다.
+
+### 샘플·품질
+- [샘플을 보고 디자인을 바꿀 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/25/): 가능합니다. 샘플을 확인한 뒤 색상·규격·가공 등 수정 사항을 반영해 승인하고 양산합니다.
+- [샘플 없이 바로 양산할 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/26/): 티스카는 양산 전에 실물 샘플을 만들어 승인을 받고, 승인된 샘플을 기준으로만 양산합니다.
+- [검수(QA/QC)는 언제, 어떻게 하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/27/): 양산이 끝나면 승인 샘플을 기준으로 검품(QA/QC)한 뒤 납품합니다. 국내 공장과 중국 생산 네트워크 어느 쪽에서 만들어도 검품과 납품은 티스카가 책임집니다.
+- [납품받은 굿즈에 불량이 있으면 어떻게 하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/28/): 검수로 불량을 최소화하고, 불량이 발생하면 원인 파악부터 해결까지 티스카가 책임지고 대응합니다.
+
+### 생산·가공
+- [티스카 공장은 어디에 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/29/): 서울 중랑구에 자체 공장이 있고, 본사는 서울 성동구 성수동입니다. 중국 광저우·이우에도 생산 네트워크를 운영합니다.
+- [굿즈는 국내 생산과 중국 생산 중 어느 쪽이 좋나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/30/): 국내 생산은 수량이 적은 편인 주문, 짧은 납기, 수정이 잦은 품목에 유리하고, 중국 생산은 금형이 필요한 품목(실리콘·PVC·금속 주조)이나 대량 생산에 유리합니다.
+- [중국 생산이면 납기가 얼마나 더 걸리나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/31/): 표준 양산 기간(7~20일)에 해외 운송·통관 기간이 더해집니다. 정확한 기간은 품목과 운송 방식에 따라 견적 시 안내합니다.
+- [중국에서 만든 굿즈의 원산지 표시는 어떻게 되나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/32/): 원산지 표시는 생산지에 따라 달라지므로, 표기 방법과 라벨·택에 반영할지 여부는 견적 단계에서 품목별로 안내합니다.
+- [어떤 가공 방식으로 굿즈를 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/33/): 실크 인쇄, 전사·승화전사, UV 인쇄, 자수, 레이저 각인, 도무송 재단, 금형 성형(실리콘·PVC), 아연합금 주조 및 도금, 에폭시 코팅, 방수 접합, 누빔, 싸바리 가공이 가능합니다.
+- [금속 뱃지 도금은 어떤 종류가 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/34/): 아연합금 주조 후 무광·유광·흑니켈·금장 도금이 가능하고, 색을 채우는 에폭시 코팅을 함께 쓸 수 있습니다.
+
+### 콘서트·엔터 MD
+- [콘서트 MD로는 어떤 품목을 많이 만드나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/35/): 아크릴 키링·응원부채, 금속 뱃지·팔찌, 패브릭·의류, 실리콘 키링·응원봉 참, 에코백·파우치, 스티커·카드 패키지, 봉제 인형, 팬클럽 키트 패키지를 주로 만듭니다.
+- [콘서트 MD 일정은 공연일에서 어떻게 거꾸로 계산하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/36/): 양산 20일 품목이 들어가면 공연 1주 전 검품·납품 완료, 그보다 20일 전 양산 시작, 그보다 1주 전 샘플 제작 시작(디자인 확정) 순서로 잡습니다. 디자인 확정에서 공연일까지 약 5주가 필요합니다.
+- [500개 미만 소량 콘서트 MD도 가능한가요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/37/): 티스카의 메인 발주는 500개부터 진행합니다. 500개 미만의 소량은 자체 소량 제작 쇼핑몰 나도메이커(nadomaker.com)에서 제작할 수 있습니다.
+- [소속사 디자인 승인 과정을 반영할 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/38/): 가능합니다. 디자인팀이 시안을 만들고, 승인된 디자인으로 실물 샘플을 제작한 뒤 샘플 승인을 받아 양산합니다. 양산은 반드시 승인 샘플 기준으로 진행합니다.
+- [해외 공연장으로 굿즈를 바로 보낼 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/39/): 일본·중국·미국·인도네시아 등 해외 유통·수출 경험이 있으며, 수출입 절차와 해외 운송을 지원합니다.
+- [어떤 아티스트의 굿즈를 만들어 봤나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/40/): 티스카의 공개 제작 사례 167건 중 55건이 엔터테인먼트 분야입니다. 세븐틴, NCT 127, NCT DREAM, 에스파, 레드벨벳, 방탄소년단, 슈퍼주니어, 엑소, 아이유, 에이티즈 등의 굿즈를 제작했습니다.
+
+### 골프 굿즈
+- [골프 대회 기념품으로 무엇을 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/41/): 금속 볼마커·디봇툴·메달, 헤드커버·아이언커버·네임택, 볼타월·양말·장갑, 골프공 세트·트로피 패키지 등을 만듭니다. 메인 발주는 모든 품목 500개부터입니다.
+- [소규모 골프 모임 기념품도 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/42/): 티스카의 메인 발주는 500개부터 진행합니다. 500개 미만의 소량은 자체 소량 제작 쇼핑몰 나도메이커(nadomaker.com)에서 제작할 수 있습니다.
+- [골프 굿즈에 브랜드 로고 색을 정확히 맞출 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/43/): 도금 색상과 에폭시 컬러, 자수 실 색상을 샘플로 먼저 확인한 뒤 양산합니다. 양산은 승인된 샘플 기준으로만 진행합니다.
+- [골프 기념품은 국내에서 생산하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/44/): 서울 중랑구 자체 공장과 중국 광저우·이우 생산 네트워크를 품목·수량·납기에 따라 함께 운영합니다. 어느 쪽이든 검품(QA/QC)과 납품은 티스카가 책임집니다.
+- [어떤 골프 브랜드의 굿즈를 만들어 봤나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/45/): 티스카의 공개 제작 사례 167건 중 82건이 골프·스포츠 분야입니다. 타이틀리스트, 팀 타이틀리스트, 풋조이, 몬스터지, 어메이징크리, 스포츠트라이브, 아디다스와 작업했습니다.
+
+### 웰컴키트·기업 선물
+- [웰컴키트 비용은 어떻게 계산하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/46/): 웰컴키트 비용은 '구성품 수 × 품목별 단가 + 패키지(박스·내지) + 인쇄·가공'으로 정해지고, 수량이 늘수록 개당 단가는 내려갑니다.
+- [웰컴키트 제작 기간은 얼마나 걸리나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/47/): 웰컴키트가 속한 패키지·세트류는 샘플 1주, 양산 14일이 표준입니다. 단, 구성품 중 양산 기간이 긴 품목(예: 텀블러·에코백 20일)이 들어가면 그 품목이 키트 전체 일정의 기준이 됩니다.
+- [웰컴키트 구성품은 몇 가지로 하는 게 좋나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/48/): 일반적으로 3~5종 안에서 시작하면 관리가 쉽습니다. 품목이 하나 늘면 단가뿐 아니라 샘플·검품 항목도 함께 늘어나기 때문입니다.
+- [웰컴키트를 500개보다 적게 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/49/): 티스카의 메인 발주는 500개부터(500개, 1,000개, 1,500개 …) 진행합니다. 500개 미만의 소량은 자체 소량 제작 쇼핑몰 나도메이커(nadomaker.com)에서 제작할 수 있습니다.
+- [로고만 있고 디자인이 없는데 웰컴키트를 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/50/): 로고 파일(AI·PDF·PSD가 가장 좋고 JPG·PNG도 가능)만 있으면 디자인팀이 키트 전체 시안을 무료로 만들어 드립니다.
+- [웰컴키트 포장과 배송까지 해주나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/51/): 싸바리 기프트박스 등 패키지 제작부터 검품·납품까지 한 번에 진행합니다. 구성품을 세트로 담는 작업 범위는 견적 시 함께 안내합니다.
+
+### 비영리·캠페인
+- [소규모 비영리단체도 굿즈를 만들 수 있나요? 500개도 많아요.](https://ohyoumeee-prog.github.io/tiska-guide/qa/52/): 티스카의 메인 발주는 500개부터 진행합니다. 500개 미만의 소량은 자체 소량 제작 쇼핑몰 나도메이커(nadomaker.com)에서 제작할 수 있습니다.
+- [단체 마스코트 인형을 만들 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/53/): 봉제 인형·인형키링은 메인 발주 500개부터, 샘플 1주·양산 20일입니다. 캐릭터 원본 파일(AI·PDF·PSD)이 있으면 가장 좋고, 그림 파일만 있어도 디자인팀이 도안 작업을 지원합니다.
+- [어떤 비영리단체의 굿즈를 만들어 봤나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/54/): 초록우산(ChildFund Korea)과 굿네이버스의 캠페인 굿즈를 제작했습니다. 인형키링, 리유저블백, 타포린 토트백, 골프공 세트, 캠페인 반지 등입니다.
+
+### 자체 브랜드·OEM/ODM
+- [OEM과 ODM은 무엇이 다른가요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/55/): OEM은 의뢰자가 정한 디자인·사양대로 제조사가 생산하는 방식이고, ODM은 제조사가 기획·설계까지 맡아 의뢰자 브랜드로 공급하는 방식입니다. 티스카는 두 방식 모두 가능합니다.
+- [디자인은 우리가 하고 생산만 맡길 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/56/): 가능합니다. 파트너사 디자인을 기반으로 생산하는 OEM 방식으로 진행할 수 있습니다. 메인 발주는 500개부터입니다.
+- [디자인이 전혀 없는데 ODM으로 가능할까요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/57/): 가능합니다. 콘셉트와 레퍼런스만 있으면 디자인팀이 기획·디자인 단계에서 시안을 제안합니다. 디자인은 생산과 함께 일괄로 진행합니다(디자인 단독 의뢰는 진행하지 않음).
+- [우리 브랜드 라벨·택을 달 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/58/): 가능합니다. 라벨·택·패키지는 사양 설계 단계에서 함께 설계하고, 샘플에서 실물로 확인합니다.
+- [자체 브랜드 상품은 한 품목을 몇 개부터 시작할 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/59/): 티스카의 메인 발주는 500개부터 진행합니다. 샘플 1일~2주, 양산 7~20일이 표준이며, 정확한 수량·단가는 견적 시 안내합니다.
+
+### 회사·진행 방식
+- [티스카는 어떤 회사인가요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/60/): 주식회사 티스카는 기업·브랜드·엔터테인먼트사의 굿즈와 프로모션 제품·MD를 주문 제작하는 서울 성수동의 B2B 제조사입니다. 기획, 디자인 시안, 샘플, 양산, 검품, 납품까지 자체 진행합니다.
+- [굿즈 제작은 어떤 순서로 진행되나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/61/): ① 문의·1:1 미팅 → ② 기획·디자인(무료 시안) → ③ 사양 설계·견적 → ④ 디자인 확정·실물 샘플 제작 → ⑤ 양산 → ⑥ 검품·납품·사후관리의 6단계로 진행됩니다.
+- [전담 PM은 무엇을 하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/62/): 전담 PM이 문의·미팅부터 디자인, 사양·견적, 샘플, 양산, 검품·납품까지 프로젝트 전 과정을 맡아 진행합니다.
+- [해외 회사도 티스카에 굿즈를 주문할 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/63/): 가능합니다. 일본·중국·미국·인도네시아 등과 거래하고 있으며, 수출입 절차와 해외 운송·물류를 지원합니다.
+- [굿즈 제작 업체를 고를 때 무엇을 확인해야 하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/64/): ① 주문 제작(OEM/ODM) 가능 여부, ② 자체 공장, ③ 내부 디자인팀, ④ 양산 전 실물 샘플, ⑤ 최소 수량과 품목별 표준 납기를 숫자로 제시하는지, ⑥ 국내·해외 생산을 모두 운영하는지, ⑦ 공개된 제작 사례를 확인하세요.
+- [티스카 제작 사례는 어디서 볼 수 있나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/65/): tiska.kr에 공개 제작 사례 167건이 있습니다. 품목별 사례 138건은 제작사례(PRODUCT), 여러 품목을 묶은 프로젝트 29건은 포트폴리오(PORTFOLIO)에 있습니다.
+- [일정이 너무 빠듯하면 어떻게 하나요?](https://ohyoumeee-prog.github.io/tiska-guide/qa/66/): 표준 일정 안에 맞추기 어려우면 티스카는 현실적으로 가능한 대안을 Plan A·B·C로 제안합니다. 예를 들어 빠른 품목군(아크릴·키링류는 샘플 1일·양산 7일)으로 구성을 바꾸는 방법이 있습니다.
+<!-- qa:end -->
+
+<!-- pages:start -->
+## 품목별 안내 (10개 품목군, 모두 메인 발주 500개부터)
+- [아크릴·키링류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/acrylic-keyring.html): 샘플 1일 · 양산 7일. 대표 품목 아크릴 키링, 쉐이커 키링, 미러 키링, 응원부채, 맥세이프 카드지갑. 관련 공개 사례 6건.
+- [가방·파우치류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/bag-pouch.html): 샘플 1주 · 양산 20일. 대표 품목 에코백, 보스턴백, 백팩, 슈즈파우치, 보냉백, 타포린백, 리유저블백. 관련 공개 사례 52건.
+- [금속·주얼리류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/metal-jewelry.html): 샘플 1주 · 양산 20일. 대표 품목 금속 뱃지, 볼마커, 디봇툴, 메달, 팔찌, 목걸이, 반지. 관련 공개 사례 18건.
+- [패브릭·의류류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/fabric-apparel.html): 샘플 1주 · 양산 20일. 대표 품목 볼타월, 샤워가운, 담요, 양말, 팔토시, 스카프, 장갑. 관련 공개 사례 15건.
+- [실리콘류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/silicone.html): 샘플 1주 · 양산 20일. 대표 품목 실리콘 키링, 피규어, 퍼터키퍼, 응원봉 참. 관련 공개 사례 8건.
+- [골프 소품·커버류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/golf-accessory.html): 샘플 1주 · 양산 20일. 대표 품목 헤드커버, 아이언커버, 얼라이먼트 스틱 커버, 항공커버, 네임택. 관련 공개 사례 8건.
+- [패키지·세트류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/package-set.html): 샘플 1주 · 양산 14일. 대표 품목 싸바리 기프트박스, 트로피 패키지, 웰컴키트, 골프공 세트. 관련 공개 사례 10건.
+- [문구·인쇄류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/stationery-print.html): 샘플 1주 · 양산 14일. 대표 품목 스티커 세트, 마우스패드, 카드 패키지, 명함 카드지갑. 관련 공개 사례 5건.
+- [봉제·인형류 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/plush-doll.html): 샘플 1주 · 양산 20일. 대표 품목 봉제 인형, 인형키링, 쿠션, 러그, 미니어처. 관련 공개 사례 9건.
+- [기타(텀블러·우산 등) 주문 제작](https://ohyoumeee-prog.github.io/tiska-guide/items/others.html): 샘플 2주 · 양산 20일. 대표 품목 텀블러, 우산, 여행 오거나이저, 일회용 필름카메라. 관련 공개 사례 9건.
+
+## 제작 사례 모음 (tiska.kr 공개 사례 167건 텍스트 색인)
+- [골프·스포츠 굿즈 제작 사례 85건](https://ohyoumeee-prog.github.io/tiska-guide/cases/golf.html): 골프 브랜드·골프 대회·스포츠 단체를 위해 만든 사례입니다. 볼마커, 디봇툴, 헤드커버, 네임택, 볼타월, 파우치, 트로피 패키지 등이 있습니다.
+- [엔터테인먼트 굿즈 제작 사례 55건](https://ohyoumeee-prog.github.io/tiska-guide/cases/entertainment.html): 콘서트 MD, 팬클럽 키트, 팬미팅·전시 MD를 만든 사례입니다. 아크릴 키링, 응원부채, 금속 뱃지, 팔찌, 봉제 인형, 포토카드 패키지 등이 있습니다.
+- [기업·브랜드·캐릭터 IP 굿즈 제작 사례 20건](https://ohyoumeee-prog.github.io/tiska-guide/cases/brand.html): 기업 프로모션 제품, 연말 기프트 패키지, 캐릭터 IP 상품, 드라마·전시 굿즈를 만든 사례입니다.
+- [비영리·공익 굿즈 제작 사례 7건](https://ohyoumeee-prog.github.io/tiska-guide/cases/nonprofit.html): 비영리 단체의 캠페인 굿즈와 후원자 감사 선물을 만든 사례입니다.
+
+## 도구·문의
+- [행사일 역산 일정 계산기](https://ohyoumeee-prog.github.io/tiska-guide/tools/schedule.html): 행사일과 품목군을 고르면 디자인 확정 마감일, 샘플·양산 완료 예정일, 문의 권장일을 표준 기간으로 역산합니다.
+- [견적 문의 방법](https://ohyoumeee-prog.github.io/tiska-guide/contact.html): 품목·수량·희망 납기·참고 이미지를 ttiska@naver.com 또는 02-930-8000으로. 담당 PM 회신, 무료 시안.
+- tiska.kr 원문: [품목별 제작 사례 138건](https://tiska.kr/board/magazine/list.html?board_no=5) · [프로젝트 29건](https://tiska.kr/board/gallery/list.html?board_no=8) · [엔터테인먼트](https://tiska.kr/shopinfo/goods_entertainment.html) · [골프](https://tiska.kr/shopinfo/goods_golf.html) · [웰컴키트](https://tiska.kr/shopinfo/goods_welcomekit.html) · [비영리](https://tiska.kr/shopinfo/goods_nonprofit.html)
+<!-- pages:end -->
+
 ## 기타
-- [자주 묻는 질문 30개](https://ohyoumeee-prog.github.io/tiska-guide/faq.html)
+- [자주 묻는 질문 66개](https://ohyoumeee-prog.github.io/tiska-guide/faq.html)
 - [회사 소개](https://ohyoumeee-prog.github.io/tiska-guide/about.html)
 - [전체 글 전문(텍스트)](https://ohyoumeee-prog.github.io/tiska-guide/llms-full.txt)
 - [RSS](https://ohyoumeee-prog.github.io/tiska-guide/rss.xml)

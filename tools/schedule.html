@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>굿즈 제작 행사일 역산 일정 계산기 | 티스카 굿즈 제작 가이드</title>
+<meta name="description" content="행사일(납품일)과 만들 품목군을 고르면 디자인 확정 마감일, 샘플·양산 완료 예정일, 문의 권장일을 티스카 표준 기간(샘플 1일~2주, 양산 7~20일)으로 거꾸로 계산합니다. 콘서트 MD, 웰컴키트, 골프 대회 기념품 일정 잡기에 쓰세요.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="주식회사 티스카">
+<link rel="canonical" href="https://ohyoumeee-prog.github.io/tiska-guide/tools/schedule.html">
+<link rel="alternate" type="application/rss+xml" title="티스카 굿즈 제작 가이드" href="../rss.xml">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="티스카 굿즈 제작 가이드">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="굿즈 제작 행사일 역산 일정 계산기 | 티스카 굿즈 제작 가이드">
+<meta property="og:description" content="행사일과 품목군을 고르면 디자인 확정 마감일과 문의 권장일을 표준 기간으로 거꾸로 계산합니다.">
+<meta property="og:url" content="https://ohyoumeee-prog.github.io/tiska-guide/tools/schedule.html">
+<meta property="og:image" content="https://ohyoumeee-prog.github.io/tiska-guide/og/sample-to-delivery-6-steps.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://ohyoumeee-prog.github.io/tiska-guide/tools/schedule.html#app","url":"https://ohyoumeee-prog.github.io/tiska-guide/tools/schedule.html","name":"굿즈 제작 행사일 역산 일정 계산기","description":"행사일과 품목군을 입력하면 굿즈 디자인 확정 마감일, 샘플·양산 완료 예정일, 문의 권장일을 티스카 표준 기간(샘플 1일~2주, 양산 7~20일)으로 역산합니다.","applicationCategory":"BusinessApplication","operatingSystem":"웹 브라우저","inLanguage":"ko-KR","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"publisher":{"@id":"https://tiska.kr/#organization"},"isPartOf":{"@id":"https://ohyoumeee-prog.github.io/tiska-guide/#website"},"dateModified":"2026-11-11"},{"@type":"Organization","@id":"https://tiska.kr/#organization","name":"주식회사 티스카","alternateName":["TISKA","티스카"],"url":"https://tiska.kr","logo":{"@type":"ImageObject","url":"https://ohyoumeee-prog.github.io/tiska-guide/logo.png","width":512,"height":512}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://ohyoumeee-prog.github.io/tiska-guide/"},{"@type":"ListItem","position":2,"name":"행사일 역산 일정 계산기","item":"https://ohyoumeee-prog.github.io/tiska-guide/tools/schedule.html"}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">티스카 <span>굿즈 제작 가이드</span></a><nav aria-label="주 메뉴"><a href="../index.html">가이드</a><a href="../items/">품목</a><a href="../cases/">제작 사례</a><a href="../faq.html">자주 묻는 질문</a><a href="../tools/schedule.html" aria-current="page">일정 계산기</a><a href="../about.html">회사 소개</a><a href="../contact.html">문의</a><a href="https://tiska.kr" rel="noopener">tiska.kr</a></nav></div></header>
+<main id="main" class="wrap">
+<nav class="crumb" aria-label="현재 위치"><a href="../index.html">홈</a> › <span>행사일 역산 일정 계산기</span></nav>
+<h1>굿즈 제작, 행사일에서 거꾸로 일정 계산하기</h1>
+<p class="meta"><time datetime="2026-11-11">2026년 11월 11일</time> · 주식회사 티스카</p>
+<section class="answer">
+<h2>이렇게 계산합니다</h2>
+<p class="lead">행사일 − 검품·배송 여유 − 양산 기간 − 샘플 기간 = <strong>디자인 확정 마감일</strong>. 여기서 시안·승인 기간을 더 빼면 <strong>문의 권장일</strong>입니다. 품목이 여러 개면 가장 오래 걸리는 품목이 기준입니다.</p>
+</section>
+
+<form class="tool" id="f" onsubmit="return false">
+<div class="row">
+<div><label for="d">행사일(굿즈가 필요한 날)</label><input type="date" id="d" required></div>
+<div><label for="b">검품·배송 여유(일)</label><input type="number" id="b" min="0" max="60" value="7"> <span class="small">가이드 기준 약 1주</span></div>
+<div><label for="t">시안·승인 기간(일)</label><input type="number" id="t" min="0" max="90" value="14"> <span class="small">승인 단계가 많으면 늘리세요</span></div>
+</div>
+<fieldset>
+<legend>만들 품목군(여러 개 선택 가능)</legend>
+<div class="checks" id="cats"></div>
+</fieldset>
+</form>
+
+<section class="result" id="out" aria-live="polite">
+<p class="note">행사일과 품목군을 고르면 결과가 여기에 나옵니다.</p>
+</section>
+
+<section id="basis">
+<h2>계산에 쓰는 표준 기간</h2>
+<div class="tbl"><table><thead><tr><th>품목군</th><th>최소 수량</th><th>샘플</th><th>양산</th><th>대표 품목</th></tr></thead><tbody id="basis-rows"></tbody></table></div>
+<p>기간은 디자인 확정 시점부터의 표준 소요 기간이고, 달력 날짜(주말 포함)로 계산합니다. 실제 일정은 품목 사양과 수량에 따라 견적 시 확정됩니다. 중국 생산이 필요한 품목은 해외 운송·통관 기간이 더해집니다. 출처: tiska.kr 공개 정보, <a href="../posts/goods-moq-by-item.html">품목별 최소 수량 가이드</a>.</p>
+</section>
+
+<nav class="related" aria-label="관련 질문"><h2>함께 보면 좋은 질문</h2><ul>
+<li><a href="../qa/14/">행사까지 한 달 남았는데 굿즈를 만들 수 있나요?</a></li>
+<li><a href="../qa/15/">여러 품목을 함께 만들면 일정은 어떻게 잡나요?</a></li>
+<li><a href="../qa/36/">콘서트 MD 일정은 공연일에서 어떻게 거꾸로 계산하나요?</a></li>
+<li><a href="../qa/47/">웰컴키트 제작 기간은 얼마나 걸리나요?</a></li>
+<li><a href="../qa/66/">일정이 너무 빠듯하면 어떻게 하나요?</a></li>
+</ul></nav>
+</main>
+<footer class="site"><div class="wrap"><p><strong>주식회사 티스카</strong> · 굿즈·프로모션 상품 주문 제작(OEM/ODM) · 사업자등록번호 275-88-02236 · 대표 오의미</p><p>본사 서울특별시 성동구 아차산로17길 48, 성수 SKV1센터1 1515호 · 자체 공장 서울 중랑구 · 생산 네트워크 중국 광저우·이우</p><p>전화 <a href="tel:+82-2-930-8000">02-930-8000</a> · 이메일 <a href="mailto:ttiska@naver.com">ttiska@naver.com</a> · <a href="https://tiska.kr">tiska.kr</a> · 소량·빠른 제작 <a href="https://nadomaker.com">nadomaker.com</a> · <a href="https://www.instagram.com/tiska_office" rel="noopener">Instagram</a> · <a href="https://blog.naver.com/ttiska" rel="noopener">네이버 블로그</a></p><p>모든 숫자는 tiska.kr 공개 정보 기준(2026년 11월 11일). · <a href="../llms.txt">llms.txt</a> · <a href="../rss.xml">RSS</a> · <a href="../sitemap.xml">사이트맵</a> · © 2026 주식회사 티스카</p></div></footer>
+<script>
+(function () {
+  // 티스카 표준 기간(디자인 확정 후, 일). 출처: tiska.kr llms.txt / 가이드 '품목별 최소 수량'
+  var CATS = [
+    { k: 'acryl', n: '아크릴·키링류', s: 1, p: 7, ex: '아크릴 키링, 쉐이커 키링, 응원부채, 맥세이프 카드지갑' },
+    { k: 'bag', n: '가방·파우치류', s: 7, p: 20, ex: '에코백, 백팩, 슈즈파우치, 보냉백, 타포린백' },
+    { k: 'metal', n: '금속·주얼리류', s: 7, p: 20, ex: '금속 뱃지, 볼마커, 디봇툴, 메달, 팔찌' },
+    { k: 'fabric', n: '패브릭·의류류', s: 7, p: 20, ex: '볼타월, 담요, 양말, 스카프, 장갑' },
+    { k: 'silicone', n: '실리콘류', s: 7, p: 20, ex: '실리콘 키링, 피규어, 퍼터키퍼, 응원봉 참' },
+    { k: 'golf', n: '골프 소품·커버류', s: 7, p: 20, ex: '헤드커버, 아이언커버, 항공커버, 네임택' },
+    { k: 'package', n: '패키지·세트류', s: 7, p: 14, ex: '싸바리 기프트박스, 웰컴키트, 골프공 세트' },
+    { k: 'paper', n: '문구·인쇄류', s: 7, p: 14, ex: '스티커 세트, 마우스패드, 카드 패키지' },
+    { k: 'plush', n: '봉제·인형류', s: 7, p: 20, ex: '봉제 인형, 인형키링, 쿠션, 러그' },
+    { k: 'etc', n: '기타', s: 14, p: 20, ex: '텀블러, 우산, 여행 오거나이저, 필름카메라' }
+  ];
+  var W = ['일', '월', '화', '수', '목', '금', '토'];
+  var $ = function (id) { return document.getElementById(id); };
+  function dur(d) { return d % 7 === 0 ? (d / 7) + '주' : d + '일'; }
+  function parse(v) { var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; }
+  function add(dt, n) { var x = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate()); x.setDate(x.getDate() + n); return x; }
+  function iso(dt) { return dt.getFullYear() + '-' + ('0' + (dt.getMonth() + 1)).slice(-2) + '-' + ('0' + dt.getDate()).slice(-2); }
+  function fmt(dt) { return iso(dt) + ' (' + W[dt.getDay()] + ')'; }
+  function diff(a, b) { return Math.round((a - b) / 86400000); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  var basis = '', boxes = '';
+  CATS.forEach(function (c) {
+    basis += '<tr><td>' + c.n + '</td><td>500개</td><td>' + dur(c.s) + '</td><td>' + c.p + '일</td><td>' + c.ex + '</td></tr>';
+    boxes += '<label><input type="checkbox" name="c" value="' + c.k + '"> <span>' + c.n + ' <small>(샘플 ' + dur(c.s) + ' · 양산 ' + c.p + '일)</small></span></label>';
+  });
+  $('basis-rows').innerHTML = basis;
+  $('cats').innerHTML = boxes;
+
+  // 주소의 ?d=2026-12-20&c=acryl,bag 값 복원
+  var qs = new URLSearchParams(location.search);
+  if (qs.get('d')) $('d').value = qs.get('d');
+  (qs.get('c') || '').split(',').forEach(function (k) { var el = document.querySelector('input[name=c][value="' + k + '"]'); if (el) el.checked = true; });
+  ['b', 't'].forEach(function (k) { if (qs.get(k) && !isNaN(+qs.get(k))) $(k).value = +qs.get(k); });
+
+  function run() {
+    var ev = parse($('d').value);
+    var sel = CATS.filter(function (c) { var el = document.querySelector('input[name=c][value="' + c.k + '"]'); return el && el.checked; });
+    var B = Math.max(0, +$('b').value || 0), T = Math.max(0, +$('t').value || 0);
+    var p = new URLSearchParams();
+    if ($('d').value) p.set('d', $('d').value);
+    if (sel.length) p.set('c', sel.map(function (c) { return c.k; }).join(','));
+    if (B !== 7) p.set('b', B);
+    if (T !== 14) p.set('t', T);
+    try { history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : '')); } catch (e) {}
+    if (!ev || !sel.length) { $('out').innerHTML = '<p class="note">행사일과 품목군을 고르면 결과가 여기에 나옵니다.</p>'; return; }
+
+    var today = new Date(); today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    var rows = sel.map(function (c) {
+      var prodEnd = add(ev, -B), sampleEnd = add(prodEnd, -c.p), design = add(sampleEnd, -c.s);
+      return { c: c, design: design, sampleEnd: sampleEnd, prodEnd: prodEnd };
+    }).sort(function (a, b) { return a.design - b.design; });
+    var g = rows[0], inquiry = add(g.design, -T);
+    var v;
+    if (today <= inquiry) {
+      v = '<div class="verdict ok">표준 일정 안에 들어갑니다. ' + fmt(inquiry) + '까지 문의하시면 시안·승인 기간 ' + T + '일을 확보할 수 있습니다.</div>';
+    } else if (today <= g.design) {
+      v = '<div class="verdict tight">빠듯합니다. 디자인을 ' + fmt(g.design) + '까지 확정해야 하므로 시안·승인에 쓸 수 있는 기간이 ' + diff(g.design, today) + '일입니다. 지금 바로 문의하세요.</div>';
+    } else {
+      v = '<div class="verdict late">표준 기간으로는 행사일에 맞추기 어렵습니다(' + diff(today, g.design) + '일 부족). 아크릴·키링류(샘플 1일·양산 7일)처럼 빠른 품목군으로 바꾸거나, 담당 PM과 가능한 대안(Plan A·B·C)을 상의하세요.</div>';
+    }
+    var h = v;
+    h += '<h2>전체 일정 (기준 품목: ' + g.c.n + ')</h2><div class="tbl"><table><thead><tr><th>단계</th><th>날짜</th><th>설명</th></tr></thead><tbody>';
+    h += '<tr><td>문의 권장일</td><td>' + fmt(inquiry) + '</td><td>디자인 확정 마감 − 시안·승인 ' + T + '일</td></tr>';
+    h += '<tr><td><strong>디자인 확정 마감</strong></td><td><strong>' + fmt(g.design) + '</strong></td><td>이날 샘플 제작 시작</td></tr>';
+    h += '<tr><td>샘플 완료·양산 시작</td><td>' + fmt(g.sampleEnd) + '</td><td>샘플 ' + dur(g.c.s) + ', 승인 샘플 기준으로 양산</td></tr>';
+    h += '<tr><td>양산 완료</td><td>' + fmt(g.prodEnd) + '</td><td>양산 ' + g.c.p + '일</td></tr>';
+    h += '<tr><td>검품·배송 완료</td><td>' + fmt(ev) + '</td><td>검품(QA/QC)·배송 여유 ' + B + '일</td></tr>';
+    h += '</tbody></table></div>';
+    if (rows.length > 1) {
+      h += '<h2>품목군별 디자인 확정 마감</h2><div class="tbl"><table><thead><tr><th>품목군</th><th>샘플 + 양산</th><th>디자인 확정 마감</th></tr></thead><tbody>';
+      rows.forEach(function (r) { h += '<tr><td>' + r.c.n + '</td><td>' + dur(r.c.s) + ' + ' + r.c.p + '일</td><td>' + fmt(r.design) + '</td></tr>'; });
+      h += '</tbody></table></div><p class="small">가장 이른 마감일이 전체 기준입니다. 빠른 품목은 늦게 시작해도 되지만, 한 업체에서 함께 진행하면 일정표 하나로 관리할 수 있습니다.</p>';
+    }
+    var subj = '[일정 계산기] 행사일 ' + iso(ev) + ' / ' + sel.map(function (c) { return c.n; }).join(', ');
+    var body = '행사일: ' + iso(ev) + '\n품목군: ' + sel.map(function (c) { return c.n; }).join(', ') + '\n디자인 확정 마감(계산): ' + iso(g.design) + '\n수량:\n예산:\n참고 이미지: (첨부)\n\n계산 링크: ' + location.href;
+    h += '<aside class="contact" aria-label="문의"><h2>이 일정으로 견적 문의하기</h2><p>품목, 수량, 참고 이미지를 함께 보내 주시면 담당 PM이 실제 가능한 일정을 안내합니다.</p><p class="cta-row">'
+      + '<a class="cta" href="mailto:ttiska@naver.com?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body) + '">이메일로 문의</a> '
+      + '<a class="cta ghost" href="https://tiska.kr/shopinfo/contact.html?from=guide-tool" rel="noopener">tiska.kr 문의 페이지</a> '
+      + '<a class="cta ghost" href="tel:+82-2-930-8000">전화 02-930-8000</a></p><p class="small">500개 미만 소량은 <a href="https://nadomaker.com">나도메이커</a>(품목에 따라 10~100개부터, 7~20일 이내).</p></aside>';
+    $('out').innerHTML = h;
+  }
+  $('f').addEventListener('input', run);
+  $('f').addEventListener('change', run);
+  run();
+})();
+</script>
+</body>
+</html>
