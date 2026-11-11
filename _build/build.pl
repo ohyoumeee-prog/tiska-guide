@@ -66,8 +66,8 @@ sub urlenc { my $b = encode_utf8(shift); $b =~ s/([^A-Za-z0-9\-_.~])/sprintf('%%
 sub cut   { my ($s, $n) = @_; return $s if length($s) <= $n; $s = substr($s, 0, $n); $s =~ s/\s+\S*$//; return "$s…"; }
 sub case_url {
   my $c = shift;
-  return "https://tiska.kr/article/product/5/$1/"   if $c =~ /^P:(\d+)$/;
-  return "https://tiska.kr/article/portfolio/8/$1/" if $c =~ /^F:(\d+)$/;
+  return "https://tiska.kr/board/magazine/read.html?no=$1&board_no=5"   if $c =~ /^P:(\d+)$/;
+  return "https://tiska.kr/board/gallery/read.html?no=$1&board_no=8" if $c =~ /^F:(\d+)$/;
   die "bad case ref $c";
 }
 
