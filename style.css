@@ -106,3 +106,8 @@ section[id]{scroll-margin-top:12px}
 .verdict.late{background:#fde8e8;color:#8f1d1d}
 @media (prefers-color-scheme:dark){.verdict.ok{background:#12301f;color:#9be3b8}.verdict.tight{background:#33290f;color:#f3d48a}.verdict.late{background:#3a1717;color:#f5a9a9}}
 @media print{header.site,footer.site,.related,.md-link,.skip{display:none}body{font-size:13px}.tbl{border:0}}
+
+/* 제작 사례 사진 */
+figure.photo{margin:1.4em 0}
+figure.photo img{display:block;max-width:100%;height:auto;border-radius:14px;border:1px solid #e5e7eb;background:#fff}
+figure.photo figcaption{font-size:.85em;color:#6b7280;margin-top:.45em}

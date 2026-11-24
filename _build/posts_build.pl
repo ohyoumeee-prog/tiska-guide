@@ -54,6 +54,7 @@ my @POSTS;
     my @c = split /\t/, $l;
     my %p; @p{@hdr} = @c;
     for (qw(n file slug reader short date time)) { die "posts.tsv: '$_' 값이 비어 있음: $l" unless defined $p{$_} && length $p{$_} }
+    $p{kind} = 'guide' unless defined $p{kind} && length $p{kind};   # guide(가이드 글) | case(제작 사례 글)
     die "posts.tsv: 날짜 형식 오류 $p{date}" unless $p{date} =~ /^\d{4}-\d{2}-\d{2}$/;
     die "posts.tsv: 시각 형식 오류 $p{time}" unless $p{time} =~ /^\d{2}:\d{2}$/;
     die "posts.tsv: 원고 없음 $SRC/$p{file}" unless -f "$SRC/$p{file}";
@@ -94,6 +95,7 @@ sub parse_post {
     if (/목표 질의:\s*(.+)/)          { push @q, ($1 =~ /"([^"]+)"/g) }
     elsif (/메타 설명[^:]*:\s*(.+)/)  { $desc = $1 }
     elsif (/내부 링크:\s*(.+)/)       { push @links, ($1 =~ /(\d{2})\(/g) }
+    elsif (/대표 이미지:\s*(\S+)/)     { $p->{cover} = $1 }   # posts/ 기준 상대 경로(예: img/p_203_01.jpg) → og:image
   }
   $p->{queries} = \@q; $p->{desc} = $desc // ''; $p->{links} = \@links;
   die "$p->{file}: 발행 메모에 '메타 설명' 없음" unless length $p->{desc};
@@ -123,6 +125,11 @@ sub parse_post {
     }
     next unless $cur;
     if ($l =~ /^\s*$/) { $flush_list->(); $flush_table->(); $flush_q->() if $cur->{kind} eq 'faq'; next }
+    if ($l =~ /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/) {   # 이미지 한 줄: ![설명](img/파일.jpg)
+      my ($alt, $src) = ($1, $2); $flush_list->(); $flush_table->();
+      $cur->{html} .= qq{<figure class="photo"><img src="} . esc($src) . qq{" alt="} . esc($alt) . qq{" loading="lazy"><figcaption>} . esc($alt) . qq{</figcaption></figure>\n};
+      next;
+    }
     if ($l =~ /^\|/) {
       $flush_list->();
       next if $l =~ /^\|[\s:|-]+\|?\s*$/;
@@ -155,7 +162,7 @@ sub parse_post {
   $p->{minutes} = ceil($p->{chars} / 500); $p->{minutes} = 3 if $p->{minutes} < 3;
   $p->{url} = "$BASE/posts/$p->{slug}.html";
   $p->{md_url} = "$BASE/posts/$p->{slug}.md";
-  $p->{og} = -f "og/$p->{slug}.png" ? "$BASE/og/$p->{slug}.png" : "$BASE/og/default.png";
+  $p->{og} = $p->{cover} && -f "posts/$p->{cover}" ? "$BASE/posts/$p->{cover}" : -f "og/$p->{slug}.png" ? "$BASE/og/$p->{slug}.png" : "$BASE/og/default.png";
   $p->{md} = "# $title\n\n_출처: $p->{url} · 게시 $p->{date} · ${ORG}_\n\n" . join("\n", @body) . "\n\n---\n**문의** ${ORG}(TISKA) · 본사 서울 성동구 성수동 · 자체 공장 서울 중랑구\n전화 02-930-8000 · 이메일 $EMAIL · 홈페이지 $ORG_URL · 소량 제작 https://nadomaker.com\n";
   return $p;
 }
@@ -278,8 +285,12 @@ $related
 sub render_index {
   my $r = './';
   my $n = scalar @POSTS;
+  my $ncase = scalar grep { $_->{kind} eq 'case' } @POSTS;
+  my $nguide = $n - $ncase;
+  my $hcount = "제작 가이드 ${nguide}편" . ($ncase ? " · 제작 사례 ${ncase}편" : "");
   my $list = join '', map {
-    qq{<li><div class="num">GUIDE $_->{n} · <time datetime="$_->{date}">$_->{date_ko}</time></div><h3><a href="posts/$_->{slug}.html">} . esc($_->{title}) . qq{</a></h3><p>} . esc($_->{answer}) . qq{</p><div class="for">독자: } . esc($_->{reader}) . qq{ · 약 $_->{minutes}분 · <a href="posts/$_->{slug}.md">.md</a></div></li>}
+    my $label = $_->{kind} eq 'case' ? '제작 사례' : "GUIDE $_->{n}";
+    qq{<li><div class="num">$label · <time datetime="$_->{date}">$_->{date_ko}</time></div><h3><a href="posts/$_->{slug}.html">} . esc($_->{title}) . qq{</a></h3><p>} . esc($_->{answer}) . qq{</p><div class="for">독자: } . esc($_->{reader}) . qq{ · 약 $_->{minutes}분 · <a href="posts/$_->{slug}.md">.md</a></div></li>}
   } @NEWEST;
   my $body = qq{<section class="hero">
 <h1>$SITE</h1>
@@ -294,7 +305,7 @@ sub render_index {
 <p><a class="cta" href="posts/goods-moq-by-item.html">품목별 최소 수량 표 먼저 보기</a> &nbsp; <a href="faq.html">자주 묻는 질문</a></p>
 </section>
 <section id="posts">
-<h2>제작 가이드 ${n}편 <small>(최신 글부터)</small></h2>
+<h2>$hcount <small>(최신 글부터)</small></h2>
 <ul class="posts">$list</ul>
 </section>
 <section id="how">
@@ -317,7 +328,7 @@ sub write_feeds {
   spit('rss.xml', qq{<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n<title>} . esc($SITE) . qq{</title>\n<link>$BASE/</link>\n<atom:link href="$BASE/rss.xml" rel="self" type="application/rss+xml"/>\n<description>} . esc($SITE_DESC) . qq{</description>\n<language>ko</language>\n<lastBuildDate>$last</lastBuildDate>\n$items</channel>\n</rss>\n});
 
   # llms.txt — "## 가이드 글(마크다운 원문)" 구역만 교체(나머지 구역은 _build/build.pl 이 관리)
-  my @guides = ("## 가이드 글(마크다운 원문)", map { "- [$_->{title}]($_->{md_url}) ($_->{date}): $_->{answer}" } @NEWEST);
+  my @guides = ("## 가이드 글(마크다운 원문)", map { ($_->{kind} eq 'case' ? '- [제작 사례] ' : '- ') . "[$_->{title}]($_->{md_url}) ($_->{date}): $_->{answer}" } @NEWEST);
   my @ll = split /\r?\n/, slurp('llms.txt');
   my ($hi) = grep { $ll[$_] =~ /^## 가이드 글/ } 0..$#ll;
   die "llms.txt: '## 가이드 글' 구역을 찾지 못함" unless defined $hi;
@@ -344,6 +355,6 @@ parse_post($_) for @POSTS;
 render_post($_) for @POSTS;
 render_index();
 write_feeds();
-spit('_build/.last_build_chars.tsv', join('', map { "$_->{slug}\t$_->{chars}\n" } @POSTS));   # publish.sh 분량 검사용
+spit('_build/.last_build_chars.tsv', join('', map { "$_->{slug}\t$_->{chars}\t$_->{kind}\n" } @POSTS));   # publish.sh 분량 검사용(슬러그, 글자 수, 종류)
 printf "posts_build 완료: 글 %d편 (최신: %s %s)\n", scalar(@POSTS), $NEWEST[0]{date}, $NEWEST[0]{slug};
 printf "  %s  %s  %s %s  %d자 %d분  FAQ %d  OG %s\n", $_->{n}, $_->{slug}, $_->{date}, $_->{time}, $_->{chars}, $_->{minutes}, scalar(@{$_->{faq}}), ($_->{og} =~ /default/ ? 'default' : 'own') for @NEWEST;

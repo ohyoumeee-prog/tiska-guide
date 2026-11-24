@@ -36,7 +36,9 @@ for f in $changed; do
   if echo "$newfiles" | grep -qx "$f"; then
     slug=$(basename "$f" .html)
     chars=$(awk -F'\t' -v s="$slug" '$1==s{print $2}' _build/.last_build_chars.tsv 2>/dev/null || true)
-    if [ -n "$chars" ] && [ "$chars" -lt 1400 ]; then short="분량 ${chars}자(<1400)"; fi
+    kind=$(awk -F'\t' -v s="$slug" '$1==s{print $3}' _build/.last_build_chars.tsv 2>/dev/null || true)
+    min=1400; [ "$kind" = "case" ] && min=800   # 제작 사례 글은 800자 이상
+    if [ -n "$chars" ] && [ "$chars" -lt "$min" ]; then short="분량 ${chars}자(<${min})"; fi
   fi
   if [ -n "$bad" ] || [ -n "$old" ] || [ "$moq" = "0" ] || [ -n "$short" ]; then
     echo "FAIL $f  금지어:[$bad] 옛수량:[$old] 500개부터:$moq $short"; fail=1
