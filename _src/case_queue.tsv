@@ -1,8 +1,8 @@
 no	type	client	item	status	slug	file	images	drafted	published	note
 203	p	기아자동차(Kia)	연말 기프트 패키지	published	case-kia-year-end-gift-package	C01_사례_기아자동차_연말기프트패키지.md	img/p_203_01.jpg|img/p_203_02.jpg	2026-11-24	2026-11-24	C01
-141	p	하성운(Ha Sung Woon)	시즌그리팅 목걸이	approved	case-hasungwoon-season-greeting-necklace	C02_사례_하성운_시즌그리팅목걸이.md	img/p_141_01.jpg	2026-11-24		C02
-201	p	타이틀리스트(Titleist)	시상식 트로피 패키지	approved	case-titleist-awards-trophy-package	C03_사례_타이틀리스트_시상식트로피패키지.md	img/p_201_01.jpg	2026-11-24		C03
-211	p	초록우산(ChildFund Korea)	초뭉이 봉제 인형키링	approved	case-childfund-chomungi-plush-keyring	C04_사례_초록우산_초뭉이_인형키링.md	img/p_211_01.jpg|img/p_211_02.jpg	2026-11-24		C04
-139	p	내셔널지오그래픽(National Geographic)	핸들형 노트북 파우치	approved	case-natgeo-laptop-pouch	C05_사례_내셔널지오그래픽_노트북파우치.md	img/p_139_01.jpg	2026-11-24		C05
-76	p	굿이어타이어(Goodyear)	스포츠 양말	approved	case-goodyear-sports-socks	C06_사례_굿이어타이어_스포츠양말.md	img/p_76_01.jpg	2026-11-24		C06
-167	f	김준수(XIA)	콘서트 MD 9종	approved	case-xia-gravity-concert-md	C07_사례_김준수_GRAVITY_콘서트MD.md	img/f_167_01.jpg|img/f_167_02.jpg	2026-11-24		C07
+141	p	하성운(Ha Sung Woon)	시즌그리팅 목걸이	published	case-hasungwoon-season-greeting-necklace	C02_사례_하성운_시즌그리팅목걸이.md	img/p_141_01.jpg	2026-11-24	2026-11-24	C02
+201	p	타이틀리스트(Titleist)	시상식 트로피 패키지	published	case-titleist-awards-trophy-package	C03_사례_타이틀리스트_시상식트로피패키지.md	img/p_201_01.jpg	2026-11-24	2026-11-24	C03
+211	p	초록우산(ChildFund Korea)	초뭉이 봉제 인형키링	published	case-childfund-chomungi-plush-keyring	C04_사례_초록우산_초뭉이_인형키링.md	img/p_211_01.jpg|img/p_211_02.jpg	2026-11-24	2026-11-24	C04
+139	p	내셔널지오그래픽(National Geographic)	핸들형 노트북 파우치	published	case-natgeo-laptop-pouch	C05_사례_내셔널지오그래픽_노트북파우치.md	img/p_139_01.jpg	2026-11-24	2026-11-24	C05
+76	p	굿이어타이어(Goodyear)	스포츠 양말	published	case-goodyear-sports-socks	C06_사례_굿이어타이어_스포츠양말.md	img/p_76_01.jpg	2026-11-24	2026-11-24	C06
+167	f	김준수(XIA)	콘서트 MD 9종	published	case-xia-gravity-concert-md	C07_사례_김준수_GRAVITY_콘서트MD.md	img/f_167_01.jpg|img/f_167_02.jpg	2026-11-24	2026-11-24	C07
