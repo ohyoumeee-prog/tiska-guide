@@ -344,5 +344,6 @@ parse_post($_) for @POSTS;
 render_post($_) for @POSTS;
 render_index();
 write_feeds();
+spit('_build/.last_build_chars.tsv', join('', map { "$_->{slug}\t$_->{chars}\n" } @POSTS));   # publish.sh 분량 검사용
 printf "posts_build 완료: 글 %d편 (최신: %s %s)\n", scalar(@POSTS), $NEWEST[0]{date}, $NEWEST[0]{slug};
 printf "  %s  %s  %s %s  %d자 %d분  FAQ %d  OG %s\n", $_->{n}, $_->{slug}, $_->{date}, $_->{time}, $_->{chars}, $_->{minutes}, scalar(@{$_->{faq}}), ($_->{og} =~ /default/ ? 'default' : 'own') for @NEWEST;

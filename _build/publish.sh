@@ -31,8 +31,15 @@ for f in $changed; do
     old=$(echo "$t" | tr '.' '\n' | grep -viE '나도메이커|nadomaker' | grep -oE '(^|[^0-9~,])(10|50|100|300)개부터' | sort -u | tr '\n' ' ' || true)
   fi
   moq=$(echo "$t" | grep -c '500개부터' || true)
-  if [ -n "$bad" ] || [ -n "$old" ] || [ "$moq" = "0" ]; then
-    echo "FAIL $f  금지어:[$bad] 옛수량:[$old] 500개부터:$moq"; fail=1
+  # 분량(본문 공백 제외 글자 수, posts_build.pl 이 기록) — 새 글은 1,400자 이상이어야 함
+  short=""
+  if echo "$newfiles" | grep -qx "$f"; then
+    slug=$(basename "$f" .html)
+    chars=$(awk -F'\t' -v s="$slug" '$1==s{print $2}' _build/.last_build_chars.tsv 2>/dev/null || true)
+    if [ -n "$chars" ] && [ "$chars" -lt 1400 ]; then short="분량 ${chars}자(<1400)"; fi
+  fi
+  if [ -n "$bad" ] || [ -n "$old" ] || [ "$moq" = "0" ] || [ -n "$short" ]; then
+    echo "FAIL $f  금지어:[$bad] 옛수량:[$old] 500개부터:$moq $short"; fail=1
   else
     echo "ok   $f  (500개부터 ${moq}회)"
   fi
