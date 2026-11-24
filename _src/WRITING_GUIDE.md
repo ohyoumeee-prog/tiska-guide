@@ -75,7 +75,7 @@
 ## 6. 제작 사례 글(매일 1편, 사장님 확인 후 발행)
 - 출처: `_src/cases_data.tsv`의 한 행(no). 사진은 `posts/img/` 에 있는 파일(p_{no}_{nn}.jpg = 제품 사례, f_{no}_{nn}.jpg = 포트폴리오 사례)만 쓴다. 사진이 없는 사례는 쓰지 않는다.
 - 승인 절차: 초안은 `_src/case_queue.tsv`(열: no, type, client, item, status, slug, file, images, drafted, published, note)에 status=draft 로 올리고 사장님께 보여 드린다. 사장님이 확인하면 status=approved, 발행되면 status=published(날짜). 자동 발행 루틴은 approved 인 사례만 하루 1편 발행한다.
-- 초안 파일 위치: 사장님이 확인하기 전의 초안(.md)과 미리보기(.html)는 저장소에 올리지 않는 로컬 폴더 `_src/drafts/`(.gitignore)에 둔다. case_queue.tsv의 file 열은 그 경로를 가리킨다. 승인되면 파일을 `_src/content/`로 옮기고 file 열을 고친 뒤 status=approved 로 커밋·푸시한다. 루틴은 `_src/content/`에 있는 approved 사례만 발행한다.
+- 초안 파일 위치: 사장님이 확인하기 전의 초안(.md)과 미리보기(.html)는 저장소에 올리지 않는 로컬 폴더 `_src/drafts/`(.gitignore)에 둔다. case_queue.tsv의 file 열은 draft 행은 그 경로(_src/drafts/…), approved·published 행은 파일명만(`_src/content/` 안에 있음)으로 적는다. 승인되면 파일을 `_src/content/`로 옮기고 file 열을 파일명만으로 고친 뒤 status=approved 로 커밋·푸시한다. 루틴은 `_src/content/`에 있는 approved 사례만 발행한다.
 - posts.tsv 행: `n`은 `C01`, `C02`… 처럼 C 번호(가이드 글 번호와 별개), `kind` 열에 `case`, `short`는 "클라이언트 품목"(예: 기아자동차 연말 패키지), 발행 시각 10:00.
 - 형식(빌더가 읽는 구조는 가이드 글과 같다):
 ```
