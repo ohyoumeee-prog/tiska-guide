@@ -66,4 +66,5 @@
 2. `_src/posts.tsv` 에 3줄 추가: `NN<TAB>파일명<TAB>슬러그<TAB>독자<TAB>짧은 이름(빵부스러기용, 10자 안팎)<TAB>YYYY-MM-DD<TAB>HH:MM` (시각은 09:00, 09:20, 09:40처럼 발행 순서대로).
 3. `bash _build/publish.sh "가이드 글 3편 추가(YYYY-MM-DD): 제목1 / 제목2 / 제목3"` 실행 → 빌드 → 규칙 검사 → 커밋·푸시. 검사에 실패하면 지적된 문장을 고치고 다시 실행한다.
 4. `_src/publish_log.md` 맨 아래에 `- YYYY-MM-DD | 슬러그1 / 슬러그2 / 슬러그3 | 커밋 해시` 를 적는다(publish.sh 실행 전에 적어 두면 같은 커밋에 들어간다).
+4-1. 보고서: `_src/reports/YYYY-MM-DD.md` 에 글마다 제목·주소·독자·3문장 요약·사용 사례(TSV no)·고친 점, 내일 후보 주제 3개, 특이사항을 적는다(루틴 프롬프트 8번).
 5. 공유 이미지(og/슬러그.png)는 없으면 og/default.png 가 자동으로 쓰인다. 로컬(Windows)에서는 `powershell -ExecutionPolicy Bypass -File og.ps1 -Dir <저장소 경로>` 로 만들 수 있다.
