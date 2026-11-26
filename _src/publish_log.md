@@ -6,3 +6,4 @@
 - 2026-11-24 | case-kia-year-end-gift-package / case-hasungwoon-season-greeting-necklace / case-titleist-awards-trophy-package / case-childfund-chomungi-plush-keyring / case-natgeo-laptop-pouch / case-goodyear-sports-socks / case-xia-gravity-concert-md (제작 사례 7편) | 수동(사장님 전부 승인, 요청으로 한 번에 발행)
 - 2026-11-25 | christmas-season-goods-production / quote-request-checklist / acrylic-keyring-structure-guide | 루틴
 - 2026-11-26 | metal-goods-plating-color-guide / sample-approval-checklist / ecobag-production-guide | 루틴
+- 2026-11-26 | cosmetics-pouch-production-guide / cosmetics-gwp-goods-planning / cosmetics-brand-launch-popup-goods-kit | 수동(화장품·뷰티 집중 첫날 추가 발행, Workflow 작성·검수)
