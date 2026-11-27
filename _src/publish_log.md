@@ -8,3 +8,4 @@
 - 2026-11-26 | metal-goods-plating-color-guide / sample-approval-checklist / ecobag-production-guide | 루틴
 - 2026-11-26 | cosmetics-pouch-production-guide / cosmetics-gwp-goods-planning / cosmetics-brand-launch-popup-goods-kit | 수동(화장품·뷰티 집중 첫날 추가 발행, Workflow 작성·검수)
 - 2026-11-27 | cosmetics-pouch-print-method-comparison / beauty-membership-vip-kit-composition / goods-reorder-additional-production-guide | 루틴
+- 2026-11-27 | case-titleist-womens-mini-pouch (제작 사례 1편) | 수동(사장님 C08~C17 전부 승인, 당일 1편 발행; 나머지 9편은 루틴이 매일 1편)
