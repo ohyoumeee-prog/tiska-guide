@@ -109,5 +109,96 @@ section[id]{scroll-margin-top:12px}
 
 /* 제작 사례 사진 */
 figure.photo{margin:1.4em 0}
-figure.photo img{display:block;max-width:100%;height:auto;border-radius:14px;border:1px solid #e5e7eb;background:#fff}
-figure.photo figcaption{font-size:.85em;color:#6b7280;margin-top:.45em}
+figure.photo img{display:block;max-width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--card)}
+figure.photo figcaption{font-size:.85em;color:var(--muted);margin-top:.45em}
+
+/* site:start */
+/* 제조사 홈페이지형 구성(_build/site_build.pl) — 이 구역 안만 고칩니다. 기존 변수(--brand/--card/--line/--accent-bg/--bg)만 써서 다크 모드를 따라갑니다. */
+header nav a.nav-cta{background:var(--brand);color:var(--bg);padding:1px 12px;border-radius:999px;font-weight:700}
+header nav a.nav-cta:hover{text-decoration:none;opacity:.9}
+header nav a.nav-cta[aria-current=page]{color:var(--bg);box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--brand-2)}
+.sec-lead{color:var(--muted);font-size:15px}
+.lead-sub{font-size:17px;color:var(--muted);margin:-4px 0 8px}
+.cards{list-style:none;padding:0;margin:14px 0 18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.card{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card[hidden]{display:none}
+.card:hover{border-color:var(--brand)}
+.card>a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.card:has(>a:focus-visible){border-color:var(--brand);outline:2px solid var(--brand);outline-offset:2px}
+.card:has(>a:focus-visible)>a:focus-visible{outline:none}
+.card>a:focus:not(:focus-visible){outline:none}
+.card[id]{scroll-margin-top:12px}
+.card>a{display:flex;flex-direction:column;flex:1;color:var(--ink)}
+.card>a:hover{text-decoration:none}
+.card img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line)}
+.card .body{display:block;padding:10px 12px 12px;font-size:14px;line-height:1.5;min-width:0}
+.card .body b{display:block;font-size:15px;color:var(--ink);line-height:1.4}
+.card .body span{display:block;color:var(--muted)}
+.card .body .lab{display:inline-block;font-size:12px;font-weight:700;color:var(--brand);background:var(--accent-bg);border-radius:999px;padding:1px 8px;margin-bottom:6px}
+.card .body small{display:block;font-size:12px;color:var(--muted);margin-top:4px}
+.card.nophoto .body{padding-top:14px}
+.cards.text .card .body{padding:14px 16px}
+@media (max-width:600px){.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card .body{padding:8px 10px 10px}}
+@media (max-width:400px){.cards.text{grid-template-columns:1fr}}
+.tabs{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0 4px;padding:4px 2px 8px;scrollbar-width:thin}
+.tabs a{flex:0 0 auto;white-space:nowrap;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px;color:var(--ink)}
+.tabs a span{color:var(--muted);margin-left:3px;font-size:12px}
+.tabs a:hover{text-decoration:none;border-color:var(--brand)}
+.tabs a:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+.tabs a.on{background:var(--brand);border-color:var(--brand);color:var(--bg);font-weight:700}
+.tabs a.on span{color:var(--bg)}
+.links{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;margin:12px 0 4px}
+.gallery{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 0 8px}
+.gallery figure{margin:0;min-width:0}
+.gallery img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:var(--card)}
+@media (min-width:700px){.gallery.multi{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery.multi figure:first-child{grid-column:1/-1}}
+table.spec th{width:7.5em;white-space:normal}
+.steps{list-style:none;padding:0;margin:14px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;counter-reset:step}
+.steps>li{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px 14px;counter-increment:step;font-size:14px;line-height:1.55;min-width:0}
+.steps>li::before{content:counter(step);display:block;width:24px;height:24px;line-height:24px;text-align:center;border-radius:50%;background:var(--brand);color:var(--bg);font-weight:800;font-size:13px;margin-bottom:6px}
+.steps>li b{display:block;font-size:15px;color:var(--ink);margin-bottom:2px}
+.steps>li span{display:block;color:var(--muted)}
+.steps dl{margin:4px 0 0}
+.steps dt{font-weight:700;font-size:13px;color:var(--brand);margin-top:6px}
+.steps dd{margin:0;color:var(--muted)}
+.steps.detail{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:600px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps.detail{grid-template-columns:1fr}}
+@media (max-width:400px){.steps{grid-template-columns:1fr}}
+.why{list-style:none;padding:0;margin:14px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.why>li{margin:0;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.6;min-width:0}
+.why>li b{display:block;font-size:15px;color:var(--ink);margin-bottom:2px}
+.why>li span{display:block;color:var(--muted)}
+@media (max-width:600px){.why{grid-template-columns:1fr}}
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}
+.nums>div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0}
+.nums b{display:block;font-size:20px;color:var(--brand);line-height:1.3;margin-bottom:2px}
+.nums span{display:block;font-size:13px;color:var(--muted);line-height:1.5}
+@media (max-width:600px){.nums{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cta-band{background:var(--accent-bg);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:32px 0 8px}
+.cta-band h2{margin:0 0 6px;font-size:18px}
+.cta-band p{margin:0 0 6px;font-size:15px}
+.pager{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 8px;font-size:14px}
+.pager a{flex:1 1 220px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--ink);min-width:0}
+.pager a:hover{text-decoration:none;border-color:var(--brand)}
+.pager a span{display:block;font-size:12px;color:var(--muted)}
+.pager a.next{text-align:right}
+#quote .qf{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px 16px;margin:12px 0}
+#quote label,#quote legend{display:block;font-weight:700;margin:12px 0 4px;font-size:15px;padding:0}
+#quote fieldset{border:0;padding:0;margin:0;min-width:0}
+#quote input[type=text],#quote input[type=email],#quote input[type=date],#quote select,#quote textarea{display:block;width:100%;max-width:100%;font:inherit;font-size:15px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+#quote input:focus,#quote select:focus,#quote textarea:focus{outline:2px solid var(--brand);outline-offset:1px}
+#quote textarea{resize:vertical;min-height:96px}
+#quote input,#quote select,#quote textarea{color-scheme:light dark}
+#quote #q-out{min-height:220px;font-size:14px;line-height:1.6}
+#quote .checks{margin-top:4px}
+#quote .checks label{display:flex;gap:6px;align-items:flex-start;font-weight:400;font-size:14px;margin:0}
+#quote .row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+#quote .row2>div{min-width:0}
+@media (max-width:600px){#quote .row2{grid-template-columns:1fr}}
+#quote button.cta{border:0;font:inherit;font-weight:700;cursor:pointer}
+#quote button.cta.ghost{border:1px solid var(--brand)}
+#quote .hint{font-size:13px;color:var(--muted);margin:6px 0 0}
+#q-msg{font-size:14px;color:var(--brand);min-height:1.5em;margin:4px 0 0}
+/* 다크 모드 대비: 기존 .cta 글자색을 배경색 변수로 */
+@media (prefers-color-scheme:dark){.cta{color:var(--bg)}}
+/* site:end */

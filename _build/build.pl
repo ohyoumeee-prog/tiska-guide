@@ -108,10 +108,11 @@ for my $q (@qa) { for (@{ $q->{guides} }) { die "Q$q->{id}: 가이드 '$_' 없�
 # ---------- 공통 조각 ----------
 sub nav {
   my ($p, $cur) = @_;
-  my @items = (['index.html', '가이드', 'guide'], ['items/', '품목', 'items'], ['cases/', '제작 사례', 'cases'], ['faq.html', '자주 묻는 질문', 'faq'], ['tools/schedule.html', '일정 계산기', 'tool'], ['about.html', '회사 소개', 'about'], ['contact.html', '문의', 'contact']);
+  my @items = (['index.html', '가이드', 'guide'], ['items/', '품목', 'items'], ['cases/', '제작 사례', 'cases'], ['guide/', '주문 제작 가이드', 'howto'], ['faq.html', '자주 묻는 질문', 'faq'], ['tools/schedule.html', '일정 계산기', 'tool'], ['about.html', '회사 소개', 'about']);
   my $s = qq(<header class="site"><div class="wrap"><a class="brand" href="${p}index.html">티스카 <span>굿즈 제작 가이드</span></a><nav aria-label="주 메뉴">);
   for (@items) { $s .= qq(<a href="$p$_->[0]") . ($cur eq $_->[2] ? ' aria-current="page"' : '') . qq(>$_->[1]</a>); }
-  return $s . qq(<a href="https://tiska.kr" rel="noopener">tiska.kr</a></nav></div></header>);
+  # 견적 문의 버튼(맨 끝) — _build/site_build.pl 의 nav() 와 글자 그대로 같아야 함
+  return $s . qq(<a href="https://tiska.kr" rel="noopener">tiska.kr</a><a class="nav-cta" href="${p}contact.html") . ($cur eq 'contact' ? ' aria-current="page"' : '') . qq(>견적 문의</a></nav></div></header>);
 }
 sub footer {
   my $p = shift;

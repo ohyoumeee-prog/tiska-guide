@@ -3,6 +3,7 @@
 # 사용:  bash _build/publish.sh "커밋 메시지"
 #   1) perl _build/posts_build.pl  (글·홈·RSS·llms 가이드 구역)
 #   2) perl _build/build.pl        (메뉴·바로가기·Q&A 링크·faq·sitemap·llms Q&A 구역)
+#   2-1) perl _build/site_build.pl (사례 포트폴리오·사례 상세·주문 제작 가이드·회사 소개·문의 작성기·홈 블록)
 #   3) 새 글 규칙 검사(통과 못 하면 커밋하지 않음)
 #   4) git add / commit / push
 set -euo pipefail
@@ -14,6 +15,8 @@ echo "== 1) posts_build"
 perl _build/posts_build.pl
 echo "== 2) build (qa/items/cases/sitemap/llms)"
 perl _build/build.pl
+echo "== 2-1) site_build"
+perl _build/site_build.pl
 
 echo "== 3) 규칙 검사"
 fail=0
