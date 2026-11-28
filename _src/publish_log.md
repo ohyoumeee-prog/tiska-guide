@@ -10,3 +10,4 @@
 - 2026-11-27 | cosmetics-pouch-print-method-comparison / beauty-membership-vip-kit-composition / goods-reorder-additional-production-guide | 루틴
 - 2026-11-27 | case-titleist-womens-mini-pouch (제작 사례 1편) | 수동(사장님 C08~C17 전부 승인, 당일 1편 발행; 나머지 9편은 루틴이 매일 1편)
 - 2026-11-28 | cosmetics-sample-miniature-kit-package-structure / beauty-pr-unboxing-package-production-steps / sticker-mousepad-stationery-goods-guide / case-team-titleist-leather-zipper-pouch | 루틴
+- 2026-11-28 | (사례 8편, 사장님 승인) case-seventeen-moojiktiger-mirror-keyring / case-footjoy-waterproof-wash-pouch / case-keekni-face-plush-pouch / case-titleist-drawer-gift-package / case-monsterg-tumbler-gift-package / case-goodneighbors-campaign-ring / case-nct127-winter-special-md / case-sportstribe-soccer-leather-nametag | 2711907
